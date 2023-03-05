@@ -32,4 +32,5 @@ header img {
     font-size: 120%;
     border: 0;
     border-radius: var(--radius);
+    cursor: pointer;
 }
