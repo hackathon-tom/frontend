@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../public/fonts/Ubuntu-Regular.ttf');
+}
+
+
+:root {
+    --primaryColor: #533a71;
+    --secondaryColor: #a799b7;
+    --thirdWheelColor: #fdf4dc;
+    --k7al: #1a1a1a;
+    --byad: #f4f4f4;
+    --radius: 10px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--byad);
+    font-family: 'Ubuntu';
+}
+
+
+.root {
+    height: 100%;
+    min-height: 1000px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- USFUL ---------------------*/
+
+boxshadow {
+    box-shadow: 1px 1px 111px 8px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 1px 1px 111px 8px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px 1px 111px 8px rgba(0,0,0,0.24);
+}
