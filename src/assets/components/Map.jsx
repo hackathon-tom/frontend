@@ -4,8 +4,8 @@ import { useMemo } from 'react';
 import { GoogleMap,useJsApiLoader, Marker } from '@react-google-maps/api';
 
 const containerStyle = {
-  width: '100vw',
-  height: '100vh'
+  width: '100%',
+  height: '800px'
 };
 
 const center = {
@@ -20,7 +20,8 @@ export default function Map() {
 
 
   return (
-    <GoogleMap
+    <div className='map-container'>
+      <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
         zoom={13}
@@ -28,6 +29,7 @@ export default function Map() {
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
+    </div>
   
   )
 }
