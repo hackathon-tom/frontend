@@ -9,8 +9,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523
+  lat: 35.70310713370488,
+  lng: -0.5833646831049463
 };
 
 export default function Map() {
@@ -23,7 +23,7 @@ export default function Map() {
     <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        zoom={13}
       >
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
