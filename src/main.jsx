@@ -5,9 +5,9 @@ import App from './App'
 
 
 // ---- CSS -------------------------------------
-import './assets/CSS/index.css'
+import './assets/CSS/index.css';
 import './assets/CSS/Footer.css';
-import './assets/CSS/header.css';
+import './assets/CSS/Header.css';
 import './assets/CSS/Pages.css';
 
 
