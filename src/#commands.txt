@@ -4,3 +4,6 @@ npm install
     npm i react-router-dom
 #
 
+#react_google_map_api
+    npm i @react-google-maps/api
+#

@@ -7,7 +7,8 @@ import Header from './assets/components/Header';
 import Footer from './assets/components/Footer';
 import Home from './assets/components/Home';
 import Page from './assets/components/Page';
-
+import Choose from './assets/components/Choose';
+import Map from './assets/components/Map';
 // --------- CSS --------------------------------------------
 import './assets/CSS/App.css'
 
@@ -18,7 +19,9 @@ export default function App() {
           <Header/>
           <Routes >
               <Route path='/' element={<Home />}/>
-              <Route path='/page/:id' element={<Page/>}/>     
+              <Route path='/page/:id' element={<Page/>}/> 
+              <Route path='/choose' element={<Choose/>}/>
+              <Route path='/choose/map' element={<Map/>}/>
           </Routes>
           <Footer/>
       </>

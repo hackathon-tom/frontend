@@ -9,6 +9,8 @@ import './assets/CSS/index.css';
 import './assets/CSS/Footer.css';
 import './assets/CSS/Header.css';
 import './assets/CSS/Pages.css';
+import './assets/CSS/Choose.css';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

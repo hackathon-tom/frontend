@@ -7,7 +7,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 30px;
-    background-color: var(--primaryColor);
+    background-color: var(--primaryColor-dark);
     box-shadow: 0px 0px 10px 1px #1a1a1a83;
 }
 

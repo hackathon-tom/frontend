@@ -1,0 +1,35 @@
+.choose {
+    height: 500px;
+    width: 40vw;
+    margin: auto;
+    margin-top: 70px;
+    background-color: var(--primaryColor-dark);
+    color: var(--secondaryColor);
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.choose Link {
+    width: 100% !important;
+}
+
+.choose input, .choose button {
+    width: 100%;
+    background-color: var(--secondaryColor);
+    border-radius: calc(var(--radius) - 2px);
+    font-size: 110%;
+    height: 35px;
+    text-align: center;
+    color: var(--k7al);
+    font-weight: 700;
+    font-family: 'ubuntu';
+}
+
+.choose hr {
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: var(--secondaryColor);
+}

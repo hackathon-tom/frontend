@@ -5,13 +5,14 @@
     justify-content: space-around;
     width: 70vw;
     height: 500px;
-    background-color: var(--primaryColor);
+    background-color: var(--primaryColor-dark);
     border-radius: var(--radius);
     margin: auto;
     margin-top: 50px;
+    padding: 10px;
     text-align: center;
     font-size: 150%;
-    color: var(--thirdWheelColor);
+    color: var(--secondaryColor);
     font-weight: 900;
     box-shadow: 1px 1px 111px 8px rgba(0,0,0,0.24);
     -webkit-box-shadow: 1px 1px 111px 8px rgba(0,0,0,0.24);
@@ -21,4 +22,14 @@
 
 .pagelogo {
     width: 400px;
+}
+
+.hero-btn {
+    width: 400px;
+    height: 35px;
+    font-size: 100%;
+    font-family: 'ubuntu';
+    font-weight: 600;
+    background-color: var(--secondaryColor);
+    border-radius: var(--radius);
 }

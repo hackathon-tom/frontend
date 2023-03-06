@@ -6,20 +6,22 @@
 
 
 :root {
-    --primaryColor: #151536;
-    --secondaryColor: #979be4;
-    --thirdWheelColor: #fdf4dc;
+    --primaryColor: #219ebc;
+    --primaryColor-dark: #023047;
+    --secondaryColor: #ffb703;
+    --thirdWheelColor: #fb8500;
+    --thirdWheelColor-dark: #8ecae6;
     --k7al: #1a1a1a;
     --byad: #f4f4f4;
     --gris: #333;
-    --radius: 10px;
+    --radius: 7px;
 }
 
 
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--secondaryColor);
+    background-color: var(--thirdWheelColor-dark);
     font-family: 'Ubuntu';
 }
 
