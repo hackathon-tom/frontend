@@ -1,11 +1,11 @@
 .page{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 70vw;
     height: 500px;
-    background-color: var(--primaryColor-dark);
+    background-color: var(--thirdWheel);
     border-radius: var(--radius);
     margin: auto;
     margin-top: 50px;
@@ -25,17 +25,32 @@
 }
 
 .home {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     background: url('../IMG/hero2.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    height: 700px;
+    height: inherit;
     width: 100%;
 }
 
+.rightHome {
+    height: 1664px;
+    width: 960px;
+    transform: scale(0.7);
+    transform-origin: 0 0; 
+    -webkit-transform-origin: 0 0; 
+    -ms-transform-origin: 0 0; 
+    -moz-transform-origin: 0 0;
+    background: url('../IMG/hero.png');
+}
+
+.leftHome {
+    border: black 1px solid;
+    width: 500px;
+}
+
 .hero-btn {
-    position: absolute;
     bottom: -50px;
     left: calc(50% - 200px);
     width: 400px;

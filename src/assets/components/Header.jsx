@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../IMG/DDH-long-line.svg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBus } from "@fortawesome/free-solid-svg-icons";
+
+
+
 export default function Header() {
     return (
         <header>
-            <img src={logo} alt="Logo" id="logo-header"></img>
+            <div className="logo"><FontAwesomeIcon icon ={faBus}></FontAwesomeIcon></div>
             <div className="header-btns">
                 <Link to={"/"}><button className="h-btn" >Home</button></Link>
                 <Link to={"/page/1"}><button className="h-btn">page1</button></Link>

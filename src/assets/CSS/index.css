@@ -6,10 +6,9 @@
 
 
 :root {
-    --primaryColor: #219ebc;
-    --primaryColor-dark: #023047;
+    --primaryColor: #3E54AC;
     --secondaryColor: #ffb703;
-    --thirdWheelColor: #fb8500;
+    --thirdWheelColor: #ECF2FF;
     --thirdWheelColor-dark: #8ecae6;
     --k7al: #1a1a1a;
     --byad: #f4f4f4;
@@ -21,7 +20,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--thirdWheelColor-dark);
+    background-color: var(--thirdWheelColor);
     font-family: 'Ubuntu';
 }
 
