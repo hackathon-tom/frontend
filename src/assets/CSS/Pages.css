@@ -65,7 +65,20 @@
     height: 80px;
     font-size: 100%;
     font-family: 'ubuntu';
-    font-weight: 600;
-    background-color: var(--thirdWheelColor);
+    font-weight: 700;
+    color: var(--byad);
+    background-color: var(--primaryColor);
     border-radius: var(--radius);
+    cursor: pointer;
+    border-color: var(--byad);
+    transition: opacity 5ms;
+}
+.hero-btn:hover{
+    background-color: var(--byad);
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    border-width: 1px;
+}
+.hero-btn:active{
+    opacity: 0.6;
 }

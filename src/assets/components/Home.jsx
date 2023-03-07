@@ -13,7 +13,7 @@ export default function Home() {
                 <h1 className="hero">Wanna Go <br/>Somewhere?</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro expedita fuga fugiat quas iure eos quidem perferendis inventore </p>
                 <Dest/>
-                <Link to="/choose"><button className="hero-btn"><FontAwesomeIcon icon ={faMapMarkerAlt}/>  find your way</button></Link>
+                <Link to="/choose"><button className="hero-btn"><FontAwesomeIcon icon ={faMapMarkerAlt}/> &nbsp; find your way</button></Link>
             </div>
             <div className="rightHome">
 
