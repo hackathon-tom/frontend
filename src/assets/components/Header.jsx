@@ -15,9 +15,9 @@ export default function Header() {
                 <h2>Trolli</h2>
              </div>
             <div className="header-btns">
-                <Link to={"/"}>Home</Link>
-                <Link to={"/bus"}>Bus</Link>
-                <Link to={"/information"}>Information</Link>
+                <Link to={"/"}><button>Home</button></Link>
+                <Link to={"/bus"}><button>Bus</button></Link>
+                <Link to={"/information"}><button>Information</button></Link>
             </div>
             </div>
             <div className="signin">
