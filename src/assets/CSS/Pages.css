@@ -27,27 +27,23 @@
 .home {
     display: flex;
     flex-direction: row;
-    background: url('../IMG/hero2.jpg');
-    background-size: cover;
-    background-position: center;
-    height: inherit;
+    justify-content: space-between;
     width: 100%;
 }
 
 .rightHome {
-    height: 1664px;
-    width: 960px;
-    transform: scale(0.7);
-    transform-origin: 0 0; 
-    -webkit-transform-origin: 0 0; 
-    -ms-transform-origin: 0 0; 
-    -moz-transform-origin: 0 0;
+    height: 1024px;
+    width: 590px;
+    
     background: url('../IMG/hero.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .leftHome {
+    margin-left: 64px;
     border: black 1px solid;
-    width: 500px;
 }
 
 .hero-btn {
