@@ -8,6 +8,7 @@ import {faBusSimple} from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
     return (
         <header>
+            <div className="header-container">
             <div className="header-left">
              <div className="header-logo">
                 <div className="logo"><FontAwesomeIcon icon ={faBusSimple}></FontAwesomeIcon></div>
@@ -20,7 +21,8 @@ export default function Header() {
             </div>
             </div>
             <div className="signin">
-                <button></button>
+                {/* <button></button> */}
+            </div>
             </div>
         </header>
     )

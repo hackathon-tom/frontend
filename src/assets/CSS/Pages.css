@@ -34,7 +34,6 @@
 .rightHome {
     height: 1024px;
     width: 590px;
-    
     background: url('../IMG/hero.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -42,18 +41,17 @@
 }
 
 .leftHome {
+    width: 500px;
+    padding-top: 210px;
     margin-left: 64px;
-    border: black 1px solid;
 }
 
 .hero-btn {
-    bottom: -50px;
-    left: calc(50% - 200px);
-    width: 400px;
+    width: 100px;
     height: 35px;
     font-size: 100%;
     font-family: 'ubuntu';
     font-weight: 600;
-    background-color: var(--secondaryColor);
+    background-color: var(--thirdWheelColor);
     border-radius: var(--radius);
 }

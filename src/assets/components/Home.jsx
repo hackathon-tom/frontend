@@ -9,7 +9,9 @@ import hero from '../IMG/hero.png'
 export default function Home() {
     return (
         <div className='home'>
+            
             <div className="leftHome">
+            <   h1 className="hero">meaw</h1>
                 <Link to="/choose"><button className="hero-btn"><FontAwesomeIcon icon ={faMapMarkerAlt}/>  find your distination</button></Link>
             </div>
             <div className="rightHome">
