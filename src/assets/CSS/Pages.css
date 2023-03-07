@@ -46,6 +46,11 @@
     margin-left: 64px;
 }
 
+.leftHome h1 {
+    font-size: 76px;
+    
+}
+
 .hero-btn {
     width: 100px;
     height: 35px;
