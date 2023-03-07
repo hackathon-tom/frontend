@@ -1,11 +1,11 @@
 .header-container {
     padding: 46px 64px;
-}
-
-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+header {
     background-color: transparent;
     position: absolute;
     z-index: 998;
