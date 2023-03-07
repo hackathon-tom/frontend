@@ -14,23 +14,25 @@ import Login from './assets/components/Login';
 
 // --------- CSS --------------------------------------------
 import './assets/CSS/App.css'
+import ApiTesting from './assets/components/ApiTesting';
 
 
 export default function App() {
-  return(
-      <>
-          <Header/>
-          <Routes >
-              <Route path='/' element={<Home />}/>
-              <Route path='/bus' element={<Bus/>}/> 
-              <Route path='/information' element={<Information/>}/> 
-              <Route path='/login' element={<Login/>}/> 
-              <Route path='/choose' element={<Choose/>}/>
-              <Route path='/choose/map' element={<Map/>}/>
-          </Routes>
-          <Footer/>
-      </>
-  );
+    return (
+        <>
+            <Header />
+            <Routes >
+                <Route path='/' element={<Home />} />
+                <Route path='/bus' element={<Bus />} />
+                <Route path='/information' element={<Information />} />
+                <Route path='/login' element={<Login />} />
+                <Route path='/choose' element={<Choose />} />
+                <Route path='/choose/map' element={<Map />} />
+                <Route path='/api' element={<ApiTesting />} />
+            </Routes>
+            <Footer />
+        </>
+    );
 }
 
 
