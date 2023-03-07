@@ -27,10 +27,16 @@ header img {
     height: 50px;
     font-size: 14px;
     font-weight: 700;
-    background-color: var(--thirdWheelColor);
-    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    color: var(--k7al);
     font-size: 120%;
     border: 0;
     border-radius: var(--radius);
     cursor: pointer;
+}
+.logo{
+    font-size: 200%;
+}
+.header-left{
+    
 }
