@@ -65,12 +65,16 @@ header img {
     font-size: 18px;
     font-family: 'ubuntu';
     cursor: pointer;
+
+}
+.signin:active{
+    opacity: 0.5;
 }
 .header-right select{
-    margin-top: 25px;
+    margin-top: 20px;
     background-color: var(--k7al-opacity);
     width: 47px;
-    height: 20px;
+    height: 25px;
     border-radius: var(--radius);
     color: var(--byad);
     border: none;
