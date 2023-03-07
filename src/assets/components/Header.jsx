@@ -22,11 +22,8 @@ export default function Header() {
                 </div>
             
                 <div className="signin">
-                    <select id="">
-                        <option value="en">🇺🇸</option>
-                        <option value="fr">🇫🇷</option>
-                        <option value="ar">🇩🇿</option>
-                    </select>
+
+                    
                     <button></button>
                 </div>
             </div>
