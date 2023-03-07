@@ -10,6 +10,7 @@ header {
     position: absolute;
     z-index: 998;
     width: 100%;
+    padding: 0;
     margin: 46px 64px;
 }
 
@@ -50,4 +51,8 @@ header img {
 
 
 
+}
+.header-logo h2{
+    font-size: 46px;
+    padding: 0;
 }
