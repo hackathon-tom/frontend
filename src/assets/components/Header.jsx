@@ -27,7 +27,7 @@ export default function Header() {
                         <option value="fr">🇫🇷</option>
                         <option value="ar">🇩🇿</option>
                     </select>
-                    <button className="signin">Login</button>
+                    <button className="signin"><FontAwesomeIcon icon={faUser} ></FontAwesomeIcon> Login</button>
                 </div>
             </div>
         </header>
