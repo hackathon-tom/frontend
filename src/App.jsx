@@ -6,7 +6,8 @@ import { Route, Routes } from 'react-router-dom';
 import Header from './assets/components/Header';
 import Footer from './assets/components/Footer';
 import Home from './assets/components/Home';
-import Page from './assets/components/Page';
+import Bus from './assets/components/Bus';
+import Information from './assets/components/Information';
 import Choose from './assets/components/Choose';
 import Map from './assets/components/Map';
 // --------- CSS --------------------------------------------
@@ -19,7 +20,8 @@ export default function App() {
           <Header/>
           <Routes >
               <Route path='/' element={<Home />}/>
-              <Route path='/page/:id' element={<Page/>}/> 
+              <Route path='/bus' element={<Bus/>}/> 
+              <Route path='/information' element={<Information/>}/> 
               <Route path='/choose' element={<Choose/>}/>
               <Route path='/choose/map' element={<Map/>}/>
           </Routes>

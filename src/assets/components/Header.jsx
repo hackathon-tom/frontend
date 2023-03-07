@@ -9,13 +9,18 @@ export default function Header() {
     return (
         <header>
             <div className="header-left">
-            <div className="logo"><FontAwesomeIcon icon ={faBusSimple}></FontAwesomeIcon></div>
-            <h2>Trolli</h2>
-            </div>
+             <div className="header-logo">
+                <div className="logo"><FontAwesomeIcon icon ={faBusSimple}></FontAwesomeIcon></div>
+                <h2>Trolli</h2>
+             </div>
             <div className="header-btns">
-                <Link to={"/"}><button className="h-btn" >Home</button></Link>
-                <Link to={"/page/1"}><button className="h-btn">page1</button></Link>
-                <Link to={"/page/2"}><button className="h-btn">page2</button></Link>
+                <Link to={"/"}>Home</Link>
+                <Link to={"/bus"}>Bus</Link>
+                <Link to={"/information"}>Information</Link>
+            </div>
+            </div>
+            <div className="signin">
+                <button></button>
             </div>
         </header>
     )
