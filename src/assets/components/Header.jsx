@@ -24,7 +24,7 @@ export default function Header() {
                 
             
                 <div className="header-right">
-                    <select id="">
+                    <select id="khayar">
                         <option value="en">🇺🇸</option>
                         <option value="fr">🇫🇷</option>
                         <option value="ar">🇩🇿</option>
