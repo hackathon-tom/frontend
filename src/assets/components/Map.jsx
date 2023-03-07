@@ -26,8 +26,7 @@ export default function Map() {
         center={center}
         zoom={13}
       >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
+        <Marker position={center}/>
       </GoogleMap>
     </div>
   
