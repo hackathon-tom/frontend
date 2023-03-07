@@ -55,3 +55,29 @@ header img {
     padding: 0;
     margin: 0;
 }
+.signin{
+    background-color: var(--k7al-opacity);
+    color: var(--byad);
+    width: 113px;
+    border-radius: var(--radius);
+    border: none;
+    height: 47px;
+    font-size: 18px;
+    font-family: 'ubuntu';
+    cursor: pointer;
+}
+.header-right select{
+    margin-top: 25px;
+    background-color: var(--k7al-opacity);
+    width: 40px;
+    height: 20px;
+    border-radius: var(--radius);
+    color: var(--byad);
+    border: none;
+}
+.header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
