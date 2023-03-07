@@ -1,12 +1,15 @@
-import { faCircle, faListDots, faMapMarkerAlt, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+
+import { faMapMarkerAlt, faEllipsisVertical, faCircleDot } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import '../CSS/Dest.css'
 
 export default function Dest() {
   return (
     <div className='Dest'>
         <div className="dest-destination">
-            <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faCircleDot}></FontAwesomeIcon>
             <input type="text" placeholder='choose your location'/>
         </div>
         <div className="separi">
