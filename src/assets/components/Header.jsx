@@ -21,13 +21,13 @@ export default function Header() {
                     <Link to={"/information"}><button>Information</button></Link>
                 </div>
             
-                <div className="signin">
+                <div className="header-right">
                     <select id="">
                         <option value="en">🇺🇸</option>
                         <option value="fr">🇫🇷</option>
                         <option value="ar">🇩🇿</option>
                     </select>
-                    <button></button>
+                    <button className="signin">Login</button>
                 </div>
             </div>
         </header>
