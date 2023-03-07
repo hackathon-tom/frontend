@@ -14,12 +14,14 @@ export default function Header() {
                         <div className="logo"><FontAwesomeIcon icon ={faBusSimple}></FontAwesomeIcon></div>
                         <h2>Trolli</h2>
                     </div>
-                </div>
-                <div className="header-btns">
+                    <div className="header-btns">
                     <Link to={"/"}><button>Home</button></Link>
                     <Link to={"/bus"}><button>Bus</button></Link>
                     <Link to={"/information"}><button>Information</button></Link>
                 </div>
+                
+                </div>
+                
             
                 <div className="header-right">
                     <select id="">
