@@ -5,13 +5,10 @@
   height: 100vh;
 }
 
-.rightHome {
-  height: 1024px;
-  width: 50vw;
-  background: url("../IMG/hero-1.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.hero-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .hero-right {
