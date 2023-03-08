@@ -32,7 +32,7 @@ export default function App() {
                     <Route path='/login' element={<Login />} />
                     <Route path='/signup' element={<Signup />} />
                     {/*<Route path='/choose' element={<Choose />} />*/}
-                    <Route path='/choose/map' element={<Map />} />
+                    <Route path='/map' element={<MapPage />} />
                     <Route path='/api' element={<ApiTesting />} />
                 </Routes>
             </div>
