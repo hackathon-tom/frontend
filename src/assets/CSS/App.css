@@ -4,12 +4,12 @@
   width: 100%;
 }
 
-.main-container {
+/* .main-container {
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
   padding: 4rem;
-}
+} */
 
 .page-container {
   height: 100%;
