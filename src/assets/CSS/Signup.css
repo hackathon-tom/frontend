@@ -2,12 +2,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100%;
 }
 
 .signup-page-image {
   width: 50vw;
-  position: absolute;
   height: 100%;
   top: 0;
   right: 0;
@@ -19,11 +17,11 @@
 }
 
 .signup-page-left {
+  margin: 150px 0 0 64px;
   width: 49%;
-  gap: 4rem;
+  gap: 1.8rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -31,7 +29,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 24px;
 }
 
 .signup-title {
@@ -50,9 +48,6 @@
   font-size: 16px;
   line-height: 150%;
   /* or 24px */
-
-  text-align: center;
-
   color: #000000;
 }
 
@@ -67,7 +62,7 @@
 .signup-page-inputs {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 .signup-page-right {

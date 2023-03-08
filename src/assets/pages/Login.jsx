@@ -23,15 +23,14 @@ export default function Login() {
             <Input leftIcon={<HiOutlineMail color="#667085" size={20} />} label={"Email"} placeholder={"example@mail.com"} />
             <Input inputType={"password"} rightIcon={<BsEye color="#667085" size={20} />} label={"Password"} placeholder={"●●●●●●●●"} />
           </div>
-          <div className='login-signup'>Don’t have an account ? <span className='login-signup-button'>Sign-up</span></div>
+          <div className='login-signup'>Don’t have an account ?<span className='login-signup-button'>Sign-up</span></div>
         </div>
         <div className='login-button'>
-          <Button leftIcon={<MdOutlineLogin color="white" size={24} />}>Login</Button>
+          <Button leftIcon={<MdOutlineLogin color="white" size={24} />}><p>Login</p></Button>
         </div>
       </div>
       <div className='login-page-right'>
-        <div className="hero-image" />
+        <div className="hero-image" /></div>
       </div>
-    </div>
   )
 }

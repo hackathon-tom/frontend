@@ -17,7 +17,7 @@ export default function Home() {
                     <p className="hero-descriptipn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro expedita fuga fugiat quas iure eos quidem perferendis inventore </p>
                 </div>
                 <Dest />
-                <CallToAction />
+                <Link to={'/map'}><CallToAction /></Link>
             </div>
             <div className="hero-right">
                 <div className="hero-image" />

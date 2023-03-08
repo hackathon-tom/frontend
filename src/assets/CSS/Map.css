@@ -12,7 +12,7 @@ p {
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    width: 450px;
+    width: 350px;
     height: 100vh;
     z-index: 900;
     background-color: var(--thirdWheelColor);

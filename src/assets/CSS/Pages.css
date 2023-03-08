@@ -1,9 +1,11 @@
 .home {
-  margin-top: -50px;
+  /* margin-top: -145.6px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 100vh;
+  width: 100vw;
+  /* gap: 100px; */
 }
 
 .hero-texts {
@@ -17,22 +19,24 @@
 }
 
 .hero-image {
-  width: 50vw;
-  height: 100%;
-  top: 0;
+  position: absolute;
   right: 0;
+  width: 40vw;
+  height: 100vh;
   background-color: blue;
   background: url("../IMG/hero-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 10;
 }
 
 .hero-left {
-  width: 49%;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 80px 0 0 64px;
 }
 
 .hero-title {

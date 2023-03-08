@@ -15,7 +15,7 @@ export default function Header() {
     }, []);
 
     return (
-        <motion.header initial={{ opacity: 0, y: -128 }} animate={{ opacity: 1, y: 0 }}>
+        <motion.header className="header" initial={{ opacity: 0, y: -128 }} animate={{ opacity: 1, y: 0 }}>
             <div className="header-container">
                 <div className="header-left">
                     <div className="header-logo">
