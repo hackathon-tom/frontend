@@ -9,6 +9,7 @@ p {
 
 
 .MapPage .map-menu{
+    overflow: scroll;
     position: absolute;
     width: 450px;
     height: 100vh;
