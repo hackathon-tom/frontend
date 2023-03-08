@@ -26,6 +26,21 @@ p {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    align-items: center;
+}
+
+.MapPage .map-menu .exit-menu  button{
+    background-color: var(--k7al-opacity);
+    height: 46px;
+    width: 46px;
+    color: var(--byad);
+    font-size: 110%;
+    border: 0;
+    border-radius: var(--radius);
+}
+
+.MapPage .map-menu .exit-menu h2 {
+    font-size: 42px;
 }
 
 .MapPage .map-menu .dest-onmenu{
