@@ -11,6 +11,7 @@ import Information from './assets/pages/Information';
 import Choose from './assets/components/Choose';
 import Map from './assets/pages/Map';
 import Login from './assets/pages/Login';
+import Signup from "./assets/pages/Signup";
 
 import ApiTesting from './assets/pages/ApiTesting';
 
@@ -20,19 +21,22 @@ import './assets/CSS/App.css'
 
 export default function App() {
     return (
-        <>
+        <div className='main-container'>
             <Header />
-            <Routes >
-                <Route path='/' element={<Home />} />
-                <Route path='/bus' element={<Bus />} />
-                <Route path='/information' element={<Information />} />
-                <Route path='/login' element={<Login />} />
-                <Route path='/choose' element={<Choose />} />
-                <Route path='/choose/map' element={<Map />} />
-                <Route path='/api' element={<ApiTesting />} />
-            </Routes>
-            <Footer />
-        </>
+            <div className="page-container">
+                <Routes >
+                    <Route path='/' element={<Home />} />
+                    <Route path='/bus' element={<Bus />} />
+                    <Route path='/information' element={<Information />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/signup' element={<Signup />} />
+                    <Route path='/choose' element={<Choose />} />
+                    <Route path='/choose/map' element={<Map />} />
+                    <Route path='/api' element={<ApiTesting />} />
+                </Routes>
+            </div>
+            {/*<Footer />*/}
+        </div>
     );
 }
 

@@ -1,87 +1,83 @@
 .header-container {
-    padding: 46px 64px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 header {
-    background-color: transparent;
-    position: absolute;
-    z-index: 998;
-    width: 100%;
-    
+  background-color: transparent;
+  width: 100%;
+  z-index: 10;
 }
 
 header img {
-    width: 200px;
+  width: 200px;
 }
 
 .header-btns {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
 }
 
 .header-btns button {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    background-color: transparent;
-    color: var(--k7al);
-    font-size: 120%;
-    border: 0;
-    border-radius: var(--radius);
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  background-color: transparent;
+  color: var(--k7al);
+  font-size: 120%;
+  border: 0;
+  border-radius: var(--radius);
+  cursor: pointer;
 }
-.header-logo{
-    font-size: 42px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
+.header-logo {
+  font-size: 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
 }
-.header-left{
-    display: flex;
-    flex-direction: row;
-    width: 399.33px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 64px;
+.header-left {
+  display: flex;
+  flex-direction: row;
+  width: 399.33px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
 }
-.header-logo h2{
-    font-size: 46px;
-    padding: 0;
-    margin: 0;
+.header-logo h2 {
+  font-size: 46px;
+  padding: 0;
+  margin: 0;
 }
-.signin{
-    background-color: var(--k7al-opacity);
-    color: var(--byad);
-    width: 113px;
-    border-radius: var(--radius);
-    border: none;
-    height: 47px;
-    font-size: 18px;
-    font-family: 'ubuntu';
-    cursor: pointer;
-
+.signin {
+  background-color: var(--k7al-opacity);
+  color: var(--byad);
+  width: 113px;
+  border-radius: var(--radius);
+  border: none;
+  height: 47px;
+  font-size: 18px;
+  /*font-family: "ubuntu";*/
+  cursor: pointer;
 }
-.signin:active{
-    opacity: 0.5;
+.signin:active {
+  opacity: 0.5;
 }
-.header-right select{
-    margin-top: 20px;
-    background-color: var(--k7al-opacity);
-    width: 47px;
-    height: 25px;
-    border-radius: var(--radius);
-    color: var(--byad);
-    border: none;
+.header-right select {
+  margin-top: 20px;
+  background-color: var(--k7al-opacity);
+  width: 47px;
+  height: 25px;
+  border-radius: var(--radius);
+  color: var(--byad);
+  border: none;
 }
-.header-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+.header-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
 }
