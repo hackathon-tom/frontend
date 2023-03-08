@@ -36,7 +36,7 @@
     width: 50vw;
     background: url('../IMG/hero-1.png');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:contain;
     background-position: center;
 }
 
