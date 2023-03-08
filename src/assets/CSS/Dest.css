@@ -5,6 +5,9 @@
     gap: 32px;
 
 }
+.separi{
+    color: var(--primaryColor);
+}
 
 .Dest input {
     border-radius: var(--radius);
@@ -12,6 +15,20 @@
     height: 50px;
     font-size: 24px;
     border: 0;
+    padding-bottom: 10px
+    
+    }
+.Dest input::placeholder{
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(158, 158, 158);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+.Dest input:focus{
+    outline-color: var(--primaryColor);
 }
 
 .Dest {
