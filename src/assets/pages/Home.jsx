@@ -6,6 +6,8 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import Dest from "../components/Dest";
 import CallToAction from "../components/CallToAction";
 
+import "../CSS/Pages.css";
+
 export default function Home() {
     return (
         <div className='home'>

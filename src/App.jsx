@@ -21,30 +21,24 @@ import './assets/CSS/App.css'
 export default function App() {
     const pathNow = location.pathname;
 
-    if (pathNow == '/map') {
-            return (
-                <Routes>
-                    <Route path='/map' element={<MapPage />} />
-                </Routes>
-            );
-    }else {
-        return (
-        
-            <>
-                <Header />
+    return (
+        <div className='main-container'>
+            {pathNow !== "/map" ? <Header /> : null}
+            <div className="page-container">
                 <Routes >
                     <Route path='/' element={<Home />} />
                     <Route path='/bus' element={<Bus />} />
                     <Route path='/information' element={<Information />} />
                     <Route path='/login' element={<Login />} />
-                    
+                    <Route path='/signup' element={<Signup />} />
+                    {/*<Route path='/choose' element={<Choose />} />*/}
+                    <Route path='/choose/map' element={<Map />} />
                     <Route path='/api' element={<ApiTesting />} />
                 </Routes>
-                <Footer />
-            </>
-        );
-    }
-    
+            </div>
+            {/*<Footer />*/}
+        </div>
+    )
 }
 
 
