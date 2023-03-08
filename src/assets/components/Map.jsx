@@ -1,7 +1,7 @@
 import React from 'react';
 import { useMemo } from 'react';
 
-import { GoogleMap,useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap,useJsApiLoader, Marker, DirectionsService, DirectionsRenderer,  } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
@@ -13,10 +13,13 @@ const center = {
   lng: -0.5833646831049463
 };
 
-export default function Map() {
-  // const google = window.google;
-  const { isLoaded } = useJsApiLoader({ id: 'google-map-script', googleMapsApiKey: ""})
 
+
+
+export default function Map() {
+  
+  const { isLoaded } = useJsApiLoader({ id: 'google-map-script', googleMapsApiKey: ""})
+  
 
 
   return (
@@ -32,3 +35,4 @@ export default function Map() {
   
   )
 }
+
