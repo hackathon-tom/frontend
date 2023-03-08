@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
+    padding-left: 10px;
 
 }
 .Dest input:focus{

@@ -9,7 +9,8 @@ p {
 
 
 .MapPage .map-menu{
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: absolute;
     width: 450px;
     height: 100vh;
@@ -38,6 +39,7 @@ p {
     font-size: 110%;
     border: 0;
     border-radius: var(--radius);
+    cursor: pointer;
 }
 
 .MapPage .map-menu .exit-menu h2 {
@@ -78,7 +80,7 @@ p {
 }
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
   }
   
   /* Track */
