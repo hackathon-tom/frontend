@@ -5,16 +5,17 @@ import { Route, Routes } from 'react-router-dom';
 // ------- components --------------------------------------
 import Header from './assets/components/Header';
 import Footer from './assets/components/Footer';
-import Home from './assets/components/Home';
-import Bus from './assets/components/Bus';
-import Information from './assets/components/Information';
+import Home from './assets/pages/Home';
+import Bus from './assets/pages/Bus';
+import Information from './assets/pages/Information';
 import Choose from './assets/components/Choose';
-import Map from './assets/components/Map';
-import Login from './assets/components/Login';
+import Map from './assets/pages/Map';
+import Login from './assets/pages/Login';
+
+import ApiTesting from './assets/pages/ApiTesting';
 
 // --------- CSS --------------------------------------------
 import './assets/CSS/App.css'
-import ApiTesting from './assets/components/ApiTesting';
 
 
 export default function App() {
