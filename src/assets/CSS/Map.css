@@ -1,0 +1,62 @@
+h4 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+.MapPage .map-menu{
+    position: absolute;
+    width: 450px;
+    height: 100vh;
+    z-index: 900;
+    background-color: var(--thirdWheelColor);
+    display: flex;
+    flex-direction: column;;
+    padding: 0 64px;
+    gap: 32px;
+
+}
+
+.MapPage .map-menu .exit-menu {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.MapPage .map-menu .dest-onmenu{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.MapPage .map-menu .dest-onmenu .remaining {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 32px;
+}
+
+.MapPage .map-menu .dest-onmenu .remaining .station {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MapPage .map-menu .dest-onmenu .remaining .station .station-left {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.MapPage .map-menu .dest-onmenu .remaining .station .station-left .nametype-station p {
+    opacity: .7;
+    font-size: 14px;
+}
