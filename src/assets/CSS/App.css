@@ -1,5 +1,16 @@
 .map-container {
-    /* margin-bottom: -100px; */
-    height: 100%;
-    width: 100%;
+  /* margin-bottom: -100px; */
+  height: 100%;
+  width: 100%;
+}
+
+.main-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 4rem;
+}
+
+.page-container {
+  height: 100%;
 }

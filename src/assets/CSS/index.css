@@ -1,64 +1,51 @@
-
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('../public/fonts/Ubuntu-Regular.ttf');
+  font-family: "Ubuntu";
+  src: url("../public/fonts/Ubuntu-Regular.ttf");
 }
-
 
 :root {
-    --primaryColor: #3E54AC;
-    --secondaryColor: #ffb703;
-    --thirdWheelColor: #ECF2FF;
-    --thirdWheelColor-dark: #8ecae6;
-    --k7al: #1a1a1a;
-    --byad: #f4f4f4;
-    --gris: #333;
-    --radius: 7px;
-    --k7al-opacity:  #1a1a1a83;
+  --primaryColor: #3e54ac;
+  --secondaryColor: #ffb703;
+  --thirdWheelColor: #ecf2ff;
+  --thirdWheelColor-dark: #8ecae6;
+  --k7al: #1a1a1a;
+  --byad: #f4f4f4;
+  --gris: #333;
+  --radius: 7px;
+  --k7al-opacity: #1a1a1a83;
 }
 
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    background-color: var(--thirdWheelColor);
-    font-family: 'Ubuntu';
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: var(--thirdWheelColor);
+  font-family: "Ubuntu";
 }
-
 
 .root {
-    height: 100%;
-    min-height: 1000px;
-    width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* --------- USFUL ---------------------*/
 
 boxshadow {
-    box-shadow: 1px 1px 111px 8px rgba(0,0,0,0.24);
-    -webkit-box-shadow: 1px 1px 111px 8px rgba(0,0,0,0.24);
-    -moz-box-shadow: 1px 1px 111px 8px rgba(0,0,0,0.24);
+  box-shadow: 1px 1px 111px 8px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 1px 1px 111px 8px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 1px 1px 111px 8px rgba(0, 0, 0, 0.24);
 }

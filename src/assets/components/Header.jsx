@@ -1,28 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faBusSimple} from "@fortawesome/free-solid-svg-icons";
+import { faBusSimple } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
+import { motion } from "framer-motion";
 
 export default function Header() {
     return (
-        <header>
+        <motion.header initial={{ opacity: 0, y: -128 }} animate={{ opacity: 1, y: 0 }}>
             <div className="header-container">
                 <div className="header-left">
                     <div className="header-logo">
-                        <div className="logo"><FontAwesomeIcon icon ={faBusSimple}></FontAwesomeIcon></div>
+                        <div className="logo"><FontAwesomeIcon icon={faBusSimple}></FontAwesomeIcon></div>
                         <h2>Trolli</h2>
                     </div>
                     <div className="header-btns">
-                    <Link to={"/"}><button>Home</button></Link>
-                    <Link to={"/bus"}><button>Bus</button></Link>
-                    <Link to={"/information"}><button>Information</button></Link>
+                        <Link to={"/"}><button>Home</button></Link>
+                        <Link to={"/bus"}><button>Bus</button></Link>
+                        <Link to={"/information"}><button>Information</button></Link>
+                    </div>
+
                 </div>
-                
-                </div>
-                
-            
                 <div className="header-right">
                     <select id="khayar">
                         <option value="en">🇺🇸</option>
@@ -32,7 +31,7 @@ export default function Header() {
                     <Link to="/login"><button className="signin"><FontAwesomeIcon icon={faUser} ></FontAwesomeIcon> Login</button></Link>
                 </div>
             </div>
-        </header>
+        </motion.header>
     )
 }
 

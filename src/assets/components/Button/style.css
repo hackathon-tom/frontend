@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  gap: 8px;
+
+  background: #3e54ac;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 125ms;
+}
+
+.button:hover {
+  scale: 0.95;
+}
+
+.button-text {
+  font-weight: 700;
+  font-size: 18px;
+
+  color: #ffffff;
+}
