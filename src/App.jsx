@@ -16,28 +16,30 @@ import ApiTesting from './assets/pages/ApiTesting';
 
 // --------- CSS --------------------------------------------
 import './assets/CSS/App.css'
+import { ContextWrapper } from './contexts/ApplicationContext';
 
 
 export default function App() {
     const pathNow = location.pathname;
 
     return (
-        <div className='main-container'>
-            {pathNow !== "/map" ? <Header /> : null}
-            <div className="page-container">
-                <Routes >
-                    <Route path='/' element={<Home />} />
-                    <Route path='/bus' element={<Bus />} />
-                    <Route path='/information' element={<Information />} />
-                    <Route path='/login' element={<Login />} />
-                    <Route path='/signup' element={<Signup />} />
-                    {/*<Route path='/choose' element={<Choose />} />*/}
-                    <Route path='/map' element={<MapPage />} />
-                    <Route path='/api' element={<ApiTesting />} />
-                </Routes>
+        <ContextWrapper>
+            <div className='main-container'>
+                {pathNow !== "/map" ? <Header /> : null}
+                <div className="page-container">
+                    <Routes >
+                        <Route path='/' element={<Home />} />
+                        <Route path='/bus' element={<Bus />} />
+                        <Route path='/information' element={<Information />} />
+                        <Route path='/login' element={<Login />} />
+                        <Route path='/signup' element={<Signup />} />
+                        <Route path='/map' element={<MapPage />} />
+                        <Route path='/api' element={<ApiTesting />} />
+                    </Routes>
+                </div>
+                {/*<Footer />*/}
             </div>
-            {/*<Footer />*/}
-        </div>
+        </ContextWrapper>
     )
 }
 
