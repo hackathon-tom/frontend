@@ -11,13 +11,27 @@
 
 .Dest input {
     border-radius: var(--radius);
-    width: 400px;
+    width: 250px;
     height: 50px;
     font-size: 20px;
     border: 0;
     padding-bottom: 10px
     
     }
+
+.Dest .gps {
+    height: 50px;
+    min-width: 50px ; 
+    margin-left: -32px;
+    font-size: 24px;
+    background-color: transparent;
+    border: 0;
+}
+
+.Dest .gps.hidden {
+    display: none;
+}
+
 .Dest input::placeholder{
     font-weight: 300;
     font-size: 15px;
@@ -45,3 +59,4 @@
 .dest-arrive{
     margin-left: 2.3px;
 }
+
