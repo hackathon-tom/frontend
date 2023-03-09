@@ -8,10 +8,10 @@ import Axios from "axios";
 /**
  * TODO: create an error handler that gonna transform the error object into the object returned inside of the catch block
  */
-export default async (email, password) => {
+export default async ({ email, password }) => {
   try {
     console.log("url:", apiUrl);
-    const response = await Axios.post(apiUrl + "authentication/" + "login/", { email, password }, { withCredentials: true });
+    const response = await Axios.post(apiUrl + "api/authentication/login/", { email, password }, { withCredentials: true });
     return response.data;
   } catch (err) {
     console.log("something wrong happened");

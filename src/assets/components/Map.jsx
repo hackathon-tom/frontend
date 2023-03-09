@@ -1,7 +1,10 @@
 import React from 'react';
 import { useMemo } from 'react';
 
-import { GoogleMap,useJsApiLoader, Marker, DirectionsService, DirectionsRenderer,  } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker, DirectionsService, DirectionsRenderer, } from '@react-google-maps/api';
+import useRequests from '../../hooks/useRequests';
+import getBuses from '../../api/getBuses';
+import getStops from '../../api/getStops';
 
 const containerStyle = {
   width: '100%',
@@ -14,13 +17,18 @@ const center = {
 };
 
 
-
-
 export default function Map() {
-  
-  const { isLoaded } = useJsApiLoader({ id: 'google-map-script', googleMapsApiKey: ""})
-  
 
+  const { isLoaded } = useJsApiLoader({ id: 'google-map-script', googleMapsApiKey: "" })
+
+  const { data, error, loading } = useRequests([getStops(), getBuses()]);
+
+  React.useState(() => {
+    if (loading)
+      console.log("data:", data);
+    if (error)
+      console.log("error", error);
+  }, [loading]);
 
   return (
     <div className='map-container'>
@@ -29,10 +37,10 @@ export default function Map() {
         center={center}
         zoom={13}
       >
-        <Marker position={center}/>
+        <Marker position={center} />
       </GoogleMap>
     </div>
-  
+
   )
 }
 
