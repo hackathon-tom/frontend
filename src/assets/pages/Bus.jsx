@@ -8,7 +8,7 @@ import { useJsApiLoader, Marker, DirectionsService, DirectionsRenderer, } from '
 //import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import LoadingLayout from '../layouts/LoadingLayout';
 import ErrorLayout from '../layouts/ErrorLayout';
-import GoogleMap from 'google-maps-react-markers'
+
 
 import { FaBus } from "react-icons/fa";
 
