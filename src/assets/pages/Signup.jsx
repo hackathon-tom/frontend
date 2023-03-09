@@ -9,8 +9,36 @@ import { MdOutlineLogin } from "react-icons/md";
 import Input from '../components/Input'
 
 import Button from '../components/Button';
+import Axios from "axios";
+import signup from '../../api/signup';
+import useRequest from '../../hooks/useRequest';
+import { ApplicationContext } from '../../contexts/ApplicationContext';
+import { Link } from 'react-router-dom';
+import PasswordInput from '../components/PasswordInput';
 
 export default function Login() {
+
+  const context = React.useContext(ApplicationContext);
+  const [loading, setLoading] = React.useState(false);
+
+  const [email, setEmail] = React.useState("");
+  const [username, setUsername] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [passwordConfirmation, setPasswordConfirmation] = React.useState("");
+
+  const handleClick = async () => {
+    setLoading(true);
+    signup({ email, username, password })
+      .then((response) => {
+        console.log(response)
+      })
+      .catch((err) => {
+        console.log("ERROOOOR")
+        console.log(err);
+      })
+      .finally(() => setLoading(false));
+  }
+
   return (
     <div className='signup-page'>
       <div className='signup-page-left'>
@@ -20,15 +48,15 @@ export default function Login() {
         </div>
         <div className='signup-page-main-content'>
           <div className='signup-page-inputs'>
-            <Input leftIcon={<HiOutlineMail color="#667085" size={20} />} label={"Email"} placeholder={"example@mail.com"} />
-            <Input label={"Username"} placeholder={"John Doe"} />
-            <Input inputType={"password"} rightIcon={<BsEye color="#667085" size={20} />} label={"Password"} placeholder={"●●●●●●●●"} />
-            <Input inputType={"password"} rightIcon={<BsEye color="#667085" size={20} />} label={"Confirm Password"} placeholder={"●●●●●●●●"} />
+            <Input value={email} setValue={setEmail} leftIcon={<HiOutlineMail color="#667085" size={20} />} label={"Email"} placeholder={"example@mail.com"} />
+            <Input value={username} setValue={setUsername} label={"Username"} placeholder={"John Doe"} />
+            <PasswordInput value={password} setValue={setPassword} />
+            <PasswordInput value={passwordConfirmation} setValue={setPasswordConfirmation} />
           </div>
-          <div className='signup-signup'>Already have an account ? <span className='signup-signup-button'>Log-in</span></div>
+          <div className='signup-signup'>Already have an account ? <span className='signup-signup-button'><Link to={"/login"}>Log-in</Link></span></div>
         </div>
         <div className='signup-button'>
-          <Button leftIcon={<MdOutlineLogin color="white" size={24} />}>Signup</Button>
+          <Button onClick={handleClick} leftIcon={<MdOutlineLogin color="white" size={24} />}>{loading ? "loading..." : "Signup"}</Button>
         </div>
       </div>
       <div className='signup-page-right'>

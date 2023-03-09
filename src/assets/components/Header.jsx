@@ -6,6 +6,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 import { motion } from "framer-motion";
 import { ApplicationContext } from "../../contexts/ApplicationContext";
+import LanguagePicker from "./LanguagePicker";
 
 export default function Header() {
     const context = React.useContext(ApplicationContext);
@@ -30,11 +31,7 @@ export default function Header() {
 
                 </div>
                 <div className="header-right">
-                    <select id="khayar">
-                        <option value="en">🇺🇸</option>
-                        <option value="fr">🇫🇷</option>
-                        <option value="ar">🇩🇿</option>
-                    </select>
+                    <LanguagePicker />
                     <Link to="/login"><button className="signin"><FontAwesomeIcon icon={faUser} ></FontAwesomeIcon> Login</button></Link>
                 </div>
             </div>

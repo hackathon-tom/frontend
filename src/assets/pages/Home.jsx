@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 import Dest from "../components/Dest";
+import Picker from "../components/Picker";
 import CallToAction from "../components/CallToAction";
 
 import "../CSS/Pages.css";

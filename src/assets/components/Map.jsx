@@ -1,6 +1,11 @@
 import React, { useRef, useState } from 'react';
 
 import { GoogleMap,useJsApiLoader, Marker, DirectionsService, DirectionsRenderer,  Autocomplete} from '@react-google-maps/api';
+import useRequests from '../../hooks/useRequests';
+import getBuses from '../../api/getBuses';
+import getStops from '../../api/getStops';
+import getShortestPath from '../../api/getShortestPath';
+
 
 const containerStyle = {
   width: '100%',
@@ -21,8 +26,6 @@ const center = {
   lat: 35.723533,
   lng: -0.569790
 };
-
-
 
 
 export default function Map() {
@@ -54,6 +57,7 @@ export default function Map() {
     setDuration(result.routes[0].legs[0].duration.value);
   }
 
+  
   return (
     <div className='map-container'>
       <button style={buttonStyle} className='oooooo' onClick={calculateRoute}>oooooo</button>
@@ -69,7 +73,7 @@ export default function Map() {
         {directionsResponse && <DirectionsRenderer directions={directionsResponse}/>}
       </GoogleMap>
     </div>
-  
+
   )
 }
 
