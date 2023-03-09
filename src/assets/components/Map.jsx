@@ -5,6 +5,8 @@ import { GoogleMap, useJsApiLoader, Marker, DirectionsService, DirectionsRendere
 import useRequests from '../../hooks/useRequests';
 import getBuses from '../../api/getBuses';
 import getStops from '../../api/getStops';
+import getShortestPath from '../../api/getShortestPath';
+
 
 const containerStyle = {
   width: '100%',
