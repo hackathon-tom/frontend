@@ -1,14 +1,22 @@
+.hero-image {
+  background: url("../IMG/hero-1.png");
+}
+
 .home {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .hero-texts {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+}
+
+.hero-picker {
 }
 
 .hero-right {
@@ -39,6 +47,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 76px;
+  line-height: 100%;
   color: #000000;
 }
 

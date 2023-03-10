@@ -10,35 +10,28 @@ header {
   z-index: 10;
 }
 
-header img {
-  width: 200px;
-}
-
 .header-btns {
   display: flex;
   flex-direction: row;
-  gap: 35px;
+  gap: 2rem;
   align-items: center;
 }
 
-.header-btns button {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
+.header-btns-a {
+  font-size: 18px;
   background-color: transparent;
-  color: var(--k7al);
-  font-size: 120%;
-  border: 0;
-  border-radius: var(--radius);
-  cursor: pointer;
+  /*color: var(--k7al);*/
+  color: #000000;
 }
+
 .header-logo {
   font-size: 42px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 32px;
+  gap: 0.5rem;
 }
+
 .header-left {
   display: flex;
   flex-direction: row;
@@ -47,11 +40,12 @@ header img {
   justify-content: space-between;
   gap: 64px;
 }
+
 .header-logo h2 {
-  font-size: 46px;
-  padding: 0;
-  margin: 0;
+  font-size: 42px;
+  font-weight: bold;
 }
+
 .signin {
   background-color: var(--k7al-opacity);
   color: var(--byad);
@@ -63,21 +57,34 @@ header img {
   /*font-family: "ubuntu";*/
   cursor: pointer;
 }
+
 .signin:active {
   opacity: 0.5;
 }
+
 .header-right select {
-  margin-top: 20px;
-  background-color: var(--k7al-opacity);
-  width: 47px;
-  height: 25px;
-  border-radius: var(--radius);
+  outline: none;
+  border: none;
+  /*margin-top: 20px;*/
+  /*background-color: var(--k7al-opacity);*/
+  background: transparent;
+  /*width: 47px;*/
+  /*height: 25px;*/
+  /*border-radius: var(--radius);*/
   color: var(--byad);
   border: none;
 }
+
+.header-right option {
+  color: black;
+  padding: 1rem;
+  background-color: white;
+}
+
 .header-right {
-  display: flex;
+  /*display: flex;*/
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }

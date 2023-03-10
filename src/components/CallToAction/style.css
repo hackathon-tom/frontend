@@ -1,0 +1,29 @@
+.cta-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 32px;
+  gap: 0.5rem;
+
+  height: 60px;
+
+  background: #3e54ac;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 125ms;
+}
+
+.cta-container:hover {
+  scale: 0.975;
+}
+
+.cta-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+
+  color: #ffffff;
+}
