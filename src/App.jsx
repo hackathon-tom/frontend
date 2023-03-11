@@ -24,9 +24,9 @@ export default function App() {
 
     return (
         <ContextWrapper>
-            <div className='main-container'>
+            
                 {pathNow !== "/map" ? <Header /> : null}
-                <div className="page-container">
+                
                     <Routes >
                         <Route path='/' element={<Home />} />
                         <Route path='/bus' element={<Bus />} />
@@ -36,9 +36,9 @@ export default function App() {
                         <Route path='/map' element={<MapPage />} />
                         <Route path='/api' element={<ApiTesting />} />
                     </Routes>
-                </div>
+
                 {/*<Footer />*/}
-            </div>
+        
         </ContextWrapper>
     )
 }

@@ -20,9 +20,8 @@ export default function Home() {
                 <Dest />
                 <Link to={'/map'}><CallToAction /></Link>
             </div>
-            <div className="hero-right">
-                <div className="hero-image" />
-            </div>
+            <div className="hero-image" />
+            
         </div>
     );
 }
