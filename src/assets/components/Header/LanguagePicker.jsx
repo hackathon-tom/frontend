@@ -31,7 +31,6 @@ const LanguagePicker = () => {
     )
 
     return (
-        <OpacityButton>
             <select id="khayar" defaultValue={context.content.language} onChange={(event) => setLanguage(event.target.value)}>
                 {Object.keys(languages).map((language) => {
                     return (
@@ -39,7 +38,6 @@ const LanguagePicker = () => {
                     )
                 })}
             </select>
-        </OpacityButton>
     )
 }
 
